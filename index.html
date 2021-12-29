@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 </head>
 <body>
     <!-- NAVBAR -->
@@ -17,14 +18,14 @@
            <button
               class="navbar-toggler"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toogle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Summer Pack</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -35,7 +36,23 @@
             </div>
         </div>
     </nav>
+
     <!-- CARROUSEL -->
+
+    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1300">
+            <img src="img/slide01.jpg" class="d-block w-100" alt="slide01">
+          </div>
+          <div class="carousel-item" data-bs-interval="1200">
+            <img src="img/slide02.jpg" class="d-block w-100" alt="slide02">
+          </div>
+          <div class="carousel-item" data-bs-interval="1100">
+            <img src="img/slide03.jpg" class="d-block w-100" alt="slide03">
+          </div>
+        </div>
+       
+      </div>
 
     <!-- RIBBON -->
 
@@ -49,6 +66,7 @@
     <!-- PLAY NINTENDO -->
     <!-- FOOTER -->
     <script src="./js/popper.min.js"></script>
+
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
